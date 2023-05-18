@@ -15,6 +15,6 @@ router.put("/update-user", userControllers.updateUser)
 router.use(isAdmin)
 router.get("/all-users", userControllers.getUsers)
 router.delete("/delete-user", userControllers.deleteUser)
-router.put("/update-user-by-admin/:uid", userControllers.updateUserByAdmin)
+router.put("/:uid", userControllers.updateUserByAdmin)
 
 module.exports = router
